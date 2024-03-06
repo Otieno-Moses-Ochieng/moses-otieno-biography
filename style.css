@@ -10,7 +10,7 @@ body {
     width: 100%;
     max-width: 90%; /* Adjust as needed */
     margin:0 auto;
-    background: linear-gradient(to right, #4CAF50, #FFC107, #FF5722);
+    background: linear-gradient(to right, #f3f6f3, #f2f1ee, #dcb5aa);
     animation: gradient-animation 10s infinite;
     border-radius: 10px;
     overflow: hidden;
@@ -54,9 +54,11 @@ margin:0 auto;
   }
   
   p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.6;
     margin-bottom: 15px;
+    font-weight: 600;
+    
   }
   
   .section {
@@ -69,4 +71,29 @@ margin:0 auto;
     color: white;
     background-color: black;
     width: 100%;
+  }
+  @media only screen and (max-width: 600px) {
+    .super-container {
+      width: 100%;
+      padding: 0 5px;
+    }
+  
+    .picture-container,
+    .content-container {
+      width: 100%;
+      float: none;
+    }
+  
+    h1, h2 {
+      font-size: 22px;
+    }
+  
+    p {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  
+    header, footer {
+      padding: 5px;
+    }
   }
